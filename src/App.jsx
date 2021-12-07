@@ -3,42 +3,23 @@ import FlashCardList from "./FlashCardList";
 import Input from "./Input";
 
 function App() {
-  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS);
+  const [flashcards, setFlashcards] = useState([]);
+
+  const addCard = (question, answer) => {
+    let card = {
+      id: flashcards.length + 1,
+      question,
+      answer,
+    };
+    setFlashcards([...flashcards, card]);
+  };
 
   return (
     <div>
-      <Input />
-      <FlashCardList flashcards={flashcards} />
+      <Input addCard={addCard} />
+      <FlashCardList flashcards={flashcards} setFlashcards={setFlashcards} />
     </div>
   );
 }
-
-const SAMPLE_FLASHCARDS = [
-  {
-    id: 1,
-    question: "Question1",
-    answer: "answer1",
-  },
-  {
-    id: 2,
-    question: "Question2",
-    answer: "answer2",
-  },
-  {
-    id: 3,
-    question: "Question3",
-    answer: "answer3",
-  },
-  {
-    id: 4,
-    question: "Question4",
-    answer: "answer4",
-  },
-  {
-    id: 5,
-    question: "Question5",
-    answer: "Answer5",
-  },
-];
 
 export default App;

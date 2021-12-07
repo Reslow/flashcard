@@ -1,8 +1,6 @@
 .card {
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   border-radius: 0.2rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.623);
@@ -11,6 +9,7 @@
   transform-style: preserve-3d;
   transition: 300ms;
   cursor: pointer;
+  display: flex;
   transform: rotateY(var(--rotate-Y, 0)) translateY(var(--translate-y, 0));
 }
 

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
-const Input = () => {
+const Input = ({ addCard }) => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
-  const [showInput, setShowInput] = useState(false);
 
   const handleSubmit = () => {
-    setShowInput(true);
+    addCard(question, answer);
   };
   return (
     <div>
@@ -27,12 +26,6 @@ const Input = () => {
       <button className="btn" onClick={handleSubmit}>
         OK
       </button>
-      {showInput && (
-        <div>
-          <p>{question}</p>
-          <p>{answer}</p>
-        </div>
-      )}
     </div>
   );
 };
