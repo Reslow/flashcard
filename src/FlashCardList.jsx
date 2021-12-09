@@ -1,5 +1,6 @@
 import React from "react";
 import FlashCard from "./FlashCard";
+import styles from "./layout/flashCardList.module.css";
 
 const FlashCardList = ({ flashcards, setFlashcards }) => {
   const removecard = (id) => {
@@ -7,7 +8,7 @@ const FlashCardList = ({ flashcards, setFlashcards }) => {
     setFlashcards(removedItemArr);
   };
   return (
-    <div>
+    <div className={styles.conOfCreatedCards}>
       {flashcards.map((flashcard) => {
         return (
           <FlashCard

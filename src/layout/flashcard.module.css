@@ -1,14 +1,14 @@
 .card {
-  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  background-color: #eef5f5;
   display: flex;
   position: relative;
   border-radius: 0.2rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.623);
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 100%;
   transform-style: preserve-3d;
   transition: 300ms;
-  cursor: pointer;
   display: flex;
   transform: rotateY(var(--rotate-Y, 0)) translateY(var(--translate-y, 0));
 }
@@ -32,6 +32,11 @@
 .card .back {
   transform: rotateY(180deg);
 }
-body {
-  background-color: rgb(243, 230, 203);
+
+.delete {
+  border: none;
+  font-size: 3em;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
 }

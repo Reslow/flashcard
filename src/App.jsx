@@ -1,6 +1,8 @@
 import { useState } from "react";
 import FlashCardList from "./FlashCardList";
 import Input from "./Input";
+import styles from "../src/layout/main.module.css";
+import Header from "../src/Header";
 
 function App() {
   const [flashcards, setFlashcards] = useState([]);
@@ -15,7 +17,8 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={styles.main}>
+      <Header />
       <Input addCard={addCard} />
       <FlashCardList flashcards={flashcards} setFlashcards={setFlashcards} />
     </div>

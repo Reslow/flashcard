@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./layout/input.module.css";
 
 const Input = ({ addCard }) => {
   const [question, setQuestion] = useState("");
@@ -6,25 +7,35 @@ const Input = ({ addCard }) => {
 
   const handleSubmit = () => {
     addCard(question, answer);
+    setQuestion("");
+    setAnswer("");
   };
   return (
-    <div>
-      <input
-        type="text"
-        name="question"
-        value={question}
-        placeholder="Question"
-        onChange={(e) => setQuestion(e.target.value)}
-      ></input>
-      <input
-        onChange={(e) => setAnswer(e.target.value)}
-        type="text"
-        name="answer"
-        value={answer}
-        placeholder="Answer"
-      ></input>
-      <button className="btn" onClick={handleSubmit}>
-        OK
+    <div className={styles.inputCon}>
+      <div className={styles.innerCon}>
+        <div className={styles.inputInnerCon}>
+          <label name="question">set a question</label>
+          <textarea
+            className={styles.text}
+            type="text"
+            name="question"
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+          />
+        </div>
+        <div className={styles.inputInnerCon}>
+          <label name="answer">set an answer</label>
+          <textarea
+            className={styles.text}
+            onChange={(e) => setAnswer(e.target.value)}
+            type="text"
+            name="answer"
+            value={answer}
+          />
+        </div>
+      </div>
+      <button className={styles.btn} onClick={handleSubmit}>
+        Enter
       </button>
     </div>
   );
