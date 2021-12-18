@@ -1,134 +1,78 @@
 /* style for mobile */
-textarea {
-  background-color: #eef5f5;
-  font-size: 24px;
-  padding: 30px 30px 30px 30px;
-  height: 150px;
-  border: none;
-  text-align: start;
-  box-shadow: rgba(0, 0, 0, 0.075) 4px 3px 3px 3px;
-  max-width: 90%;
-  margin-bottom:20px;
-  margin-top:20px;
 
+  
+.inputCon{
+  background-color: rgb(245, 245, 245);
+  display:flex;
+  flex-direction: column;
+  padding:15px;
+  text-align: center;
+}
+
+.cardHeadline{
+  color:#10c772;
+  margin:10px 0px;
+
+}
+
+.innerCon{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputInnerCon{
+  display: flex;
+  flex-direction: column;
+  margin:5px;
+}
+
+textarea{
+  background-color: rgba(253, 249, 244, 0.452);
   resize: none;
+  height:250px;
+  color:#0c9656;
+  font-size: 2em;;
+  border:rgb(192, 173, 230) 1px solid;;
+  width:100%;
 }
-textarea:focus {
-  background-color: rgb(250, 239, 228);
-}
-
-.btn {
-  padding: 15px 45px 15px 45px;
-  box-shadow: rgba(0, 0, 0, 0.089) 3px 3px 2px 2px;
-  border: none;
-  background-color: #fd7628;
-  font-size: 1rem;
-  color: white;
-  height: 30%;
-  align-self: flex-end;
-  margin-bottom: 10px;
+.btn{
+  background-color:#039752;
+  color:rgb(254, 254, 254);
+  min-width: 60%;
+  margin-right:auto;
+  margin-left: auto;
   margin-top:30px;
+  margin-bottom:30px;
+  padding:25px 30px;
+  border:none;
+  font-size: 1.5em;;
+  box-shadow: 3px 4px 3p 4px rgb(31, 21, 21);
+
 }
 
-.btn:hover {
-  background-color: #da6d2e;
-}
-.innerCon {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.inputCon {
-  width: 90%;
-  background-color: rgb(61, 60, 60);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  box-shadow: rgb(59, 59, 59) 3px 4px 10px 1px;
-  padding: 15px;
-  border-radius: 5px;
-}
-
-.inputInnerCon {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: #ecececee;
-  font-size: 1.5rem;
-}
 
 @media (min-width: 600px) {
-  /* style for over 600px */
-  textarea {
-    background-color: #eef5f5;
-    font-size: 24px;
-    padding: 30px 30px 30px 30px;
-    height: 150px;
-    margin: 10px;
-    border: none;
-    text-align: start;
-    box-shadow: rgba(0, 0, 0, 0.075) 4px 3px 3px 3px;
-    max-width: 300px;
-    resize: none;
-  }
-  textarea:focus {
-    background-color: rgb(250, 239, 228);
-    outline: none;
-  }
-  
-  .btn {
-    padding: 15px 45px 15px 45px;
-    box-shadow: rgba(0, 0, 0, 0.089) 3px 3px 2px 2px;
-    border: none;
-    background-color: #e27536;
-    font-size: 1rem;
-    color: white;
-    height: 30%;
-    align-self: flex-end;
-    margin-bottom: 10px;
-  }
-  
-  .btn:hover {
-    background-color: #da6d2e;
-  }
-  .innerCon {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .inputCon {
-    width: 90%;
-    background-color: rgb(61, 60, 60);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    box-shadow: rgb(59, 59, 59) 3px 4px 10px 1px;
-    padding: 30px;
-    border-radius: 10px;
-  }
-  
-  .inputInnerCon {
-    margin-left: auto;
-    margin-right: auto;
-  
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #ecececee;
-    font-size: 1.5rem;
-    align-items: center;
-  }
-  
- 
+.inputCon{
+width:90%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.innerCon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
 }
 
 @media (min-width: 900px) {
-
-
-}
+  .inputCon{
+  width:65%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  }

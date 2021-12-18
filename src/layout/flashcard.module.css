@@ -1,6 +1,6 @@
 .card {
   justify-content: center;
-  background-color: #eef5f5;
+  background-color: #ffffff;
   display: flex;
   position: relative;
   border-radius: 0.2rem;
@@ -20,6 +20,8 @@
 
 .card.flip {
   --rotate-Y: 180deg;
+  background-color: #10c772;
+  color:white;
 }
 
 .card .front,

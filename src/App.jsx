@@ -18,7 +18,10 @@ function App() {
 
   return (
     <div className={styles.main}>
-      <Header />
+      <Header /> 
+      <div  className={styles.subtitle}>
+      <p>create your own set of flashcards</p>        
+      </div>
       <Input addCard={addCard} />
       <FlashCardList flashcards={flashcards} setFlashcards={setFlashcards} />
     </div>

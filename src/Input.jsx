@@ -14,7 +14,7 @@ const Input = ({ addCard }) => {
     <div className={styles.inputCon}>
       <div className={styles.innerCon}>
         <div className={styles.inputInnerCon}>
-          <label name="question">set a question</label>
+          <label name="question" className={styles.cardHeadline}>set a question</label>
           <textarea
             className={styles.text}
             type="text"
@@ -24,7 +24,7 @@ const Input = ({ addCard }) => {
           />
         </div>
         <div className={styles.inputInnerCon}>
-          <label name="answer">set an answer</label>
+          <label className={styles.cardHeadline} name="answer">set an answer</label>
           <textarea
             className={styles.text}
             onChange={(e) => setAnswer(e.target.value)}

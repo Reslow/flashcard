@@ -1,8 +1,20 @@
-body,
-html {
-  background-color: #1f64be;
+body {
+  background-color: #3f106b;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  color: rgb(32, 25, 25);
+  max-width:100vw;
+  height:100vh;
+  margin:5px
+}
 
+p{
+  font-size: 1em;
+}
+
+h1{
+  font-size: 2em;;
+}
+
+.subtitle{
+  color:rgb(255, 255, 255);
 }
